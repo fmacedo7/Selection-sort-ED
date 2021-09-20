@@ -2,14 +2,14 @@
 	#include <time.h>
 	#include <stdbool.h>
 	
-	/* Selection Sort È um algoritmo de ordenaÁ„o que passa
+	/* Selection Sort √© um algoritmo de ordena√ß√£o que passa
 	o menor valor de um vetor para a primeira posicao (ou o contrario, 
 	dependendo da ordem de execucao), depois o segundo menor valor 
-	para a segunda posicao, e assim È feito sucessivamente com todos os valores restante. 
+	para a segunda posicao, e assim √© feito sucessivamente com todos os valores restante. 
 	*/
 	
 	/*
-	@autor Felizberto Macedo, Jo„o Carvalho; Karlisson Breno
+	@autor Felizberto Macedo, Jo√£o Carvalho; Karlisson Breno
 	*/
 	
 	void selection_sort (int vetor[], int max) {
@@ -17,6 +17,7 @@
 	int i, j, min, aux;
 	for (i = 0; i < (max - 1); i++) {
 	min = i;
+	/* Para mudar a ordem dos n√∫meros, basta mudar o simbolo "<" por ">" */	
 	for (j = i+1; j < max; j++) {
 	  if (vetor[j] < vetor[min]) { //Se tiver algum numero menor no vetor que a posicao atual, ele faz a troca.
 	min = j;
@@ -68,7 +69,7 @@
 	}
 	
 	
-	/* ------------------------- mÈtodo main -------------------------------------------------------------- */
+	/* ------------------------- m√©todo main -------------------------------------------------------------- */
 	int main () {
 	int op;
 	
